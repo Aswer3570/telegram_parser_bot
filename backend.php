@@ -72,7 +72,7 @@ else{
 if(count($scoreArrayOdd) == $limit_data['limit']){
 	$answer = 'Последние ' . $limit_data['limit'] . ' результатов были нечётными!';
 	// Отправляем запрос на сервер Telegram
-	$token = '1054735993:AAHmJezhcGOsqohmkf7w1cHiLEYR5d2H9D8';
+	$token = 'Your API key';
 	$inquiry = file_get_contents('https://api.telegram.org/bot' . $token . '/getupdates?offset=-1', false, $context);
 	$results = json_decode($inquiry, true);
 	// Получения данных из JSON ответа от Telegram
