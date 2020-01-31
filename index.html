@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FIFA Penalty Bot</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="body">
+		<div class="error_container">
+			<p class="error_container_title">Произошла ошибка на сервере</p>
+		</div>
+
+		<div class="body_container">
+			<div class="title_container">
+				<p class="title">Нечётные результаты</p>
+			</div>
+			<p class="odd_data"></p>
+			<p class="loading">Загружаю данные...</p>
+			<p class="error_data">Ошибка 😔</p>
+		</div>
+
+		<div class="body_container">
+			<div class="title_container">
+				<p class="title">Лимит исходов</p>
+			</div>
+			<form id="form_limit">
+				<input type="number" class="odd_limit_input" placeholder="Лимит исходов (макс. 20)" min="0" max="20">
+				<input type="submit" class="odd_limit_button" value=" ">
+			</form>
+			<p class="save">Сохранено 👍</p>
+		</div>
+	</div>
+
+	<!--Скрипты-->
+	<script src="js/jquery.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

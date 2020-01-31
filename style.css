@@ -1,0 +1,108 @@
+body{
+	margin: 0;
+	font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+	background: #edeef0;
+}
+
+.body{
+	width: 355px;
+	margin: 20px auto auto auto;
+	overflow: hidden;
+}
+
+.error_container{
+	background-color: #ff0000;
+	border-radius: 10px;
+	border: 3px solid #d40000;
+	margin: 0 0 20px 0;
+	padding: 20px 0 20px 0;
+	display: none;
+}
+.error_container_title{
+	color: #fff;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.body_container{
+	background-color: #fff;
+	box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+	border-radius: 10px;
+	overflow: auto;
+	margin: 1px 1px 20px 1px;
+}
+
+.title_container{
+	border: solid #d8d8d8;
+	border-top-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 1px;
+	border-left-width: 0;
+}
+.title{
+	color: #000;
+	font-size: 18px;
+	margin: 0;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	font-weight: 700;
+}
+
+.odd_data{
+	color: #000;
+	font-size: 60px;
+	margin: 20px 0 20px 0;
+	font-weight: 900;
+	text-align: center;
+	display: none;
+}
+.loading{
+	color: #000;
+	font-size: 20px;
+	margin: 20px 0 20px 0;
+	font-weight: 700;
+	text-align: center;
+}
+.error_data{
+	color: #000;
+	font-size: 20px;
+	margin: 20px 0 20px 0;
+	font-weight: 700;
+	text-align: center;
+	display: none;
+}
+
+.odd_limit_container{
+	margin: 20px 1px 1px 1px;
+	overflow: hidden;
+}
+.odd_limit_input{
+	width: 247px;
+    font-size: 17px;
+    padding: 8px 9px 8px 9px;
+    border: 1px solid #d8d8d8;
+    outline: none;
+    float: left;
+    border-radius: 3px;
+    margin: 20px 0 20px 20px;
+}
+.odd_limit_button{
+	float: right;
+    margin: 25px 20px 0 17px;
+    background: url(images/save.png) no-repeat center;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-size: 103% auto;
+    padding: 13px 13px 0px 13px;
+}
+.save{
+	color: #00c500;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+}
