@@ -56,12 +56,13 @@ if(empty($scoreArray) || empty($scoreArrayOdd)){
 	echo json_encode(array('result' => 'error'));
 }
 else{
+	$date = date("d.m.Y H:i:s");
 	$scoreArrayOdd_length = count($scoreArrayOdd);
 	$json_data = [
 		'result' => 'ok',
   		'odd_array' => $scoreArrayOdd_length,
   		'outcome_limit' => $limit_data['limit'],
-  		'time' => date("d.m.Y H:i:s"),
+  		'time' => $date,
   		'all_data' => $scoreArray,
   		'odd_data' => $scoreArrayOdd
 	];
@@ -70,9 +71,9 @@ else{
 
 // Проверяем количество нечётных результатов и отправляем уведомление через Telegram
 if(count($scoreArrayOdd) == $limit_data['limit']){
-	$answer = 'Последние ' . $limit_data['limit'] . ' результатов были нечётными!';
+	$answer = 'Последние ' . $limit_data['limit'] . ' результатов были нечётными! (' . $date . ')';
 	// Отправляем запрос на сервер Telegram
-	$token = 'Your API key';
+	$token = '1054735993:AAHmJezhcGOsqohmkf7w1cHiLEYR5d2H9D8';
 	$inquiry = file_get_contents('https://api.telegram.org/bot' . $token . '/getupdates?offset=-1', false, $context);
 	$results = json_decode($inquiry, true);
 	// Получения данных из JSON ответа от Telegram
